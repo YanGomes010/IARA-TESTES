@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Teste JavaScript</title>
+    <script src="https://cdn.boteria.com.br/webchat.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: grid;
+            place-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Teste da IARA</h1>
+
+
+<!-- BODY -->
+  <script>
+    window.renderChannelsBar(
+    '68ac70e95022d026ced65d4e',
+    { // Objeto com variáveis e configurações de layout do webchat.
+      var_title: "var_value", // Variável da sessão.
+      webchatType: 'widget', // Define o tipo do webchat. Deve ser 'fullscreen' ou 'widget'.
+      layout: { //Caso exista o objeto layout, este será utilizado para definir configurações do webchat.
+        'bar-bg-color': 'fff', // Cor de fundo da barra de canais.
+        // 'bot-name': 'Teste título', // Nome do bot.
+        // 'bot-bg-color': '278222', // Cor de fundo da mensagem do bot.
+        // 'bot-text-color': 'fff', // Cor do texto da mensagem do bot.
+        // 'user-bg-color': '6a5837', // Cor de fundo da mensagem do usuário e do título do chat.
+        // 'user-text-color': 'fff0f0', // Cor do texto da mensagem do usuário e do título do chat.
+      }
+    },
+    false, // Define se é para reiniciar a sessão caso os parâmetros sejam alterados.
+    false, // Define um id customizado para o elemento que vai renderizar o webchat no html.
+    );
+  </script>
+    </body>
+</html>
